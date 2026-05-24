@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-coffee-50: #FDFBF7;
+  --color-coffee-100: #F5F2EE;
+  --color-coffee-200: #E0D7CC;
+  --color-coffee-300: #D7CCC8;
+  --color-coffee-400: #A1887F;
+  --color-coffee-500: #8D6E63;
+  --color-coffee-600: #795548;
+  --color-coffee-700: #6D4C41;
+  --color-coffee-800: #5D4037;
+  --color-coffee-900: #3E2723;
+  --color-coffee-950: #2C1810;
+}
+
+/* Custom styled scrollbars for the chat experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-coffee-200);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-coffee-300);
+}
+
+/* Base body styles */
+body {
+  background-color: var(--color-coffee-50);
+  color: var(--color-coffee-950);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* CSS animate keyframes for brewing drip effect */
+@keyframes drip {
+  0% { transform: translateY(-10px); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0; }
+}
+
+.animate-drip {
+  animation: drip 1.5s infinite ease-in-out;
+}
