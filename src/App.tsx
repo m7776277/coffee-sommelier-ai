@@ -510,7 +510,7 @@ export default function App() {
         </div>
 
         {/* Responsive Desktop bento panels grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 flex-1 items-stretch min-h-[520px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 flex-1 items-stretch h-[600px] lg:h-[700px] min-h-[520px]">
           
           {/* ZONE 1: Left category list sidebar */}
           <section 
